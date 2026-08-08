@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainsta Asnamarch Pratama — Biografi</title>
+    <style>
+      :root {
+        --bg: #f5f6f4;
+        --surface: #ffffff;
+        --ink: #1c2024;
+        --ink-soft: #565d66;
+        --accent: #2b5c8a;
+        --accent-soft: #dce6ee;
+        --line: #dadfe3;
+        --serif: Georgia, "Times New Roman", Times, serif;
+        --sans:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        --mono: ui-monospace, SFMono-Regular, "Courier New", Courier, monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        background-image:
+          linear-gradient(var(--line) 1px, transparent 1px),
+          linear-gradient(90deg, var(--line) 1px, transparent 1px);
+        background-size: 36px 36px;
+        background-attachment: fixed;
+        color: var(--ink);
+        font-family: var(--sans);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 56px 24px 80px;
+      }
+
+      .sheet {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        box-shadow: 0 1px 2px rgba(28, 32, 36, 0.04);
+      }
+
+      header.sheet {
+        padding: 44px 40px 36px;
+        position: relative;
+      }
+
+      .corner {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border: 1.5px solid var(--accent);
+        opacity: 0.65;
+      }
+      .corner.tl {
+        top: 12px;
+        left: 12px;
+        border-right: none;
+        border-bottom: none;
+      }
+      .corner.tr {
+        top: 12px;
+        right: 12px;
+        border-left: none;
+        border-bottom: none;
+      }
+      .corner.bl {
+        bottom: 12px;
+        left: 12px;
+        border-right: none;
+        border-top: none;
+      }
+      .corner.br {
+        bottom: 12px;
+        right: 12px;
+        border-left: none;
+        border-top: none;
+      }
+
+      .header-grid {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .photo-placeholder {
+        flex: 0 0 auto;
+        width: 112px;
+        height: 112px;
+        border: 1px dashed var(--line);
+        background: var(--bg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--ink-soft);
+        padding: 8px;
+      }
+
+      .photo-label {
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .photo-status {
+        margin-top: 4px;
+        font-size: 10px;
+        color: var(--ink-soft);
+      }
+
+      .header-text {
+        flex: 1 1 260px;
+        min-width: 220px;
+      }
+
+      .eyebrow {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 10px;
+      }
+
+      h1.name {
+        font-family: var(--serif);
+        font-size: clamp(28px, 4.4vw, 38px);
+        font-weight: 700;
+        margin: 0 0 8px;
+        letter-spacing: -0.01em;
+      }
+
+      .role-line {
+        color: var(--ink-soft);
+        font-size: 15px;
+        margin: 0 0 4px;
+      }
+
+      .domisili {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--ink-soft);
+        letter-spacing: 0.02em;
+      }
+
+      main {
+        margin-top: 28px;
+      }
+
+      section {
+        padding: 34px 40px;
+        margin-bottom: 2px;
+      }
+
+      section + section {
+        border-top: 1px solid var(--line);
+      }
+
+      .section-head {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+
+      h2.section-title {
+        font-family: var(--serif);
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: -0.005em;
+      }
+
+      p {
+        margin: 0 0 14px;
+        color: var(--ink);
+        font-size: 15.5px;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      .timeline {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 22px;
+        border-left: 1.5px solid var(--line);
+      }
+
+      .timeline li {
+        position: relative;
+        padding-bottom: 22px;
+      }
+      .timeline li:last-child {
+        padding-bottom: 0;
+      }
+
+      .timeline li::before {
+        content: "";
+        position: absolute;
+        left: -27px;
+        top: 5px;
+        width: 9px;
+        height: 9px;
+        background: var(--surface);
+        border: 2px solid var(--accent);
+        border-radius: 50%;
+      }
+
+      .tl-period {
+        font-family: var(--mono);
+        font-size: 11.5px;
+        color: var(--accent);
+        letter-spacing: 0.03em;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .tl-title {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 2px;
+        font-size: 15.5px;
+      }
+
+      .tl-sub {
+        color: var(--ink-soft);
+        font-size: 14px;
+        margin: 0 0 6px;
+      }
+
+      .tl-desc {
+        font-size: 14.5px;
+        color: var(--ink);
+        margin: 0;
+      }
+
+      .cert-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+
+      .cert-card {
+        border: 1px solid var(--line);
+        padding: 16px 18px;
+        background: var(--bg);
+      }
+
+      .cert-name {
+        font-weight: 600;
+        font-size: 14.5px;
+        margin: 0 0 8px;
+      }
+
+      .cert-meta {
+        font-family: var(--mono);
+        font-size: 11.5px;
+        color: var(--ink-soft);
+        line-height: 1.9;
+      }
+
+      .cert-meta strong {
+        color: var(--accent);
+      }
+
+      footer.sheet {
+        padding: 30px 40px;
+        text-align: center;
+      }
+
+      .contact-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        font-family: var(--mono);
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      .contact-list a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+      .contact-list a:hover,
+      .contact-list a:focus-visible {
+        border-bottom-color: var(--accent);
+      }
+
+      .footnote {
+        font-size: 11.5px;
+        color: var(--ink-soft);
+      }
+
+      a:focus-visible,
+      .contact-list a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 560px) {
+        header.sheet,
+        section,
+        footer.sheet {
+          padding-left: 22px;
+          padding-right: 22px;
+        }
+        .cert-grid {
+          grid-template-columns: 1fr;
+        }
+        .header-grid {
+          gap: 20px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+
+      .tech-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .tech-item {
+        display: inline-flex;
+        align-items: center;
+        min-height: 38px;
+        padding: 0 14px;
+
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--ink);
+
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.02em;
+
+        transition:
+          background-color 0.2s ease,
+          border-color 0.2s ease,
+          color 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .tech-item:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        transform: translateY(-2px);
+      }
+
+      .interest-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-bottom: 18px;
+      }
+
+      .interest-item {
+        position: relative;
+        min-height: 72px;
+
+        display: flex;
+        align-items: flex-end;
+
+        padding: 16px;
+
+        border: 1px solid var(--line);
+        background: var(--card);
+
+        overflow: hidden;
+      }
+
+      .interest-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 28px;
+        height: 2px;
+
+        background: var(--accent);
+      }
+
+      .interest-item::after {
+        content: "";
+        position: absolute;
+        right: -18px;
+        bottom: -18px;
+
+        width: 50px;
+        height: 50px;
+
+        border: 1px solid var(--line);
+        transform: rotate(45deg);
+      }
+
+      .interest-title {
+        position: relative;
+        z-index: 1;
+
+        font-size: 14px;
+        font-weight: 650;
+        color: var(--ink);
+      }
+
+      .section-description {
+        max-width: 760px;
+        margin: 0;
+
+        color: var(--ink-soft);
+        font-size: 13px;
+        line-height: 1.8;
+      }
+
+      @media (max-width: 700px) {
+        .interest-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 480px) {
+        .tech-grid {
+          gap: 8px;
+        }
+
+        .tech-item {
+          min-height: 34px;
+          padding: 0 11px;
+          font-size: 10px;
+        }
+
+        .interest-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .interest-item {
+          min-height: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="sheet">
+        <span class="corner tl" aria-hidden="true"></span>
+        <span class="corner tr" aria-hidden="true"></span>
+        <span class="corner bl" aria-hidden="true"></span>
+        <span class="corner br" aria-hidden="true"></span>
+
+        <div class="header-grid">
+          <div class="photo-placeholder" aria-label="Tempat foto profil">
+            <!-- <span class="photo-label">Foto Profil</span> -->
+            <span class="photo-status">Foto belum tersedia</span>
+          </div>
+
+          <div class="header-text">
+            <p class="eyebrow">Biografi</p>
+            <h1 class="name">Rainsta Asnamarch Pratama</h1>
+            <p class="role-line">Mahasiswa Teknologi Rekayasa Mekatronika</p>
+            <p class="domisili">Domisili: Kabupaten Boyolali</p>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="sheet">
+          <div class="section-head">
+            <h2 class="section-title">Profil Singkat</h2>
+          </div>
+          <p>
+            Rainsta Asnamarch Pratama merupakan mahasiswa Teknologi Rekayasa
+            Mekatronika pada jenjang Diploma IV di Politeknik Maritim Negeri
+            Indonesia. Sebelumnya, ia menempuh pendidikan di SMK Negeri 5
+            Surakarta pada Konsentrasi Keahlian Rekayasa Perangkat Lunak. Latar
+            belakang tersebut memberikan pengalaman awal dalam pemrograman,
+            pengelolaan situs web, dan analisis perangkat lunak. Saat ini, ia
+            sedang mengembangkan kemampuan pada bidang kelistrikan, otomasi,
+            teknologi, dan mekatronika.
+          </p>
+        </section>
+
+        <section class="sheet">
+          <div class="section-head">
+            <h2 class="section-title">Pendidikan</h2>
+          </div>
+          <ul class="timeline">
+            <li>
+              <span class="tl-period">2026–sekarang</span>
+              <span class="tl-title">Politeknik Maritim Negeri Indonesia</span>
+              <p class="tl-sub">
+                Diploma IV (D4) &middot; Program Studi &middot; Teknologi
+                Rekayasa Mekatronika
+              </p>
+            </li>
+            <li>
+              <span class="tl-period">2023 – 2026</span>
+              <span class="tl-title">SMK Negeri 5 Surakarta</span>
+              <p class="tl-sub">
+                Bidang Keahlian Teknologi Informasi &middot; Program Keahlian
+                Pengembangan Perangkat Lunak dan Gim &middot; Konsentrasi
+                Keahlian Rekayasa Perangkat Lunak
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sheet">
+          <div class="section-head">
+            <h2 class="section-title">Pengalaman</h2>
+          </div>
+          <ul class="timeline">
+            <li>
+              <span class="tl-period">2025–Sekarang</span>
+              <span class="tl-title">Pengelola Konten Situs Web</span>
+              <p class="tl-sub">SMK Negeri 5 Surakarta</p>
+              <p class="tl-desc">
+                Melakukan penulisan, penyuntingan, dan publikasi artikel pada
+                situs web sekolah.
+              </p>
+            </li>
+            <li>
+              <span class="tl-period">2 Januari – 30 April 2026</span>
+              <span class="tl-title">Praktik Kerja Lapangan</span>
+              <p class="tl-sub">
+                CV Cipta Solutindo Tech &middot; Bidang Pemrograman dan
+                Pengembangan Perangkat Lunak
+              </p>
+              <p class="tl-desc">
+                Selama pelaksanaan Praktik Kerja Lapangan, Rainsta terlibat
+                dalam kegiatan yang berkaitan dengan pemrograman dan
+                pengembangan perangkat lunak. Pengalaman tersebut mencakup
+                pemahaman terhadap struktur aplikasi, analisis kode, serta
+                penggunaan beberapa framework dan perangkat pendukung
+                pengembangan. Praktik Kerja Lapangan dilaksanakan selama 2
+                Januari hingga 30 April 2026 dan diselesaikan dengan hasil baik.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sheet">
+          <div class="section-head">
+            <h2 class="section-title">Keahlian</h2>
+          </div>
+          <p>
+            Rainsta memahami alur dan logika pemrograman, serta mampu membaca
+            dan menganalisis kode untuk mengidentifikasi bagian yang berpotensi
+            mengalami kesalahan. Ia juga memahami struktur dan keterkaitan
+            antarbagian dalam codebase aplikasi, termasuk aplikasi dengan
+            struktur dan dokumentasi yang terbatas. Dalam proses pengembangan
+            perangkat lunak, ia memanfaatkan teknologi kecerdasan artifisial
+            sebagai alat bantu untuk memahami, menyusun, menganalisis, dan
+            menyempurnakan kode.
+          </p>
+        </section>
+        <section class="sheet">
+          <div class="section-head">
+            <h2>Teknologi &amp; Tools</h2>
+          </div>
+
+          <div class="tech-grid">
+            <span class="tech-item">CodeIgniter 3</span>
+            <span class="tech-item">CodeIgniter 4</span>
+            <span class="tech-item">Laravel</span>
+            <span class="tech-item">Livewire</span>
+            <span class="tech-item">Flux</span>
+            <span class="tech-item">Metronic</span>
+            <span class="tech-item">PHP</span>
+            <span class="tech-item">phpMyAdmin</span>
+            <span class="tech-item">Laragon</span>
+            <span class="tech-item">XAMPP</span>
+          </div>
+        </section>
+        <section class="sheet">
+          <div class="section-head">
+            <h2>Bidang yang Diminati</h2>
+          </div>
+
+          <div class="interest-grid">
+            <div class="interest-item">
+              <span class="interest-title">Kelistrikan</span>
+            </div>
+
+            <div class="interest-item">
+              <span class="interest-title">Otomasi</span>
+            </div>
+
+            <div class="interest-item">
+              <span class="interest-title">Mekatronika</span>
+            </div>
+
+            <div class="interest-item">
+              <span class="interest-title">Teknologi</span>
+            </div>
+
+            <div class="interest-item">
+              <span class="interest-title">Pemrograman</span>
+            </div>
+
+            <div class="interest-item">
+              <span class="interest-title">Sistem Mekatronika</span>
+            </div>
+          </div>
+
+          <p class="section-description">
+            Rainsta memiliki ketertarikan untuk mengembangkan kemampuan pada
+            bidang kelistrikan, teknologi, otomasi, dan mekatronika, termasuk
+            pemanfaatan pemrograman dalam pengembangan sistem mekatronika.
+          </p>
+        </section>
+        <section class="sheet">
+          <div class="section-head">
+            <h2 class="section-title">Arah Pengembangan</h2>
+          </div>
+          <p>
+            Rainsta saat ini mengembangkan ketertarikan dan kemampuan pada
+            bidang teknologi, kelistrikan, otomasi, dan mekatronika, termasuk
+            pengembangan kemampuan pemrograman yang berkaitan dengan sistem
+            mekatronika.
+          </p>
+        </section>
+
+        <section class="sheet">
+          <div class="section-head">
+            <h2 class="section-title">Sertifikasi</h2>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <p class="cert-name">
+                TOEIC® Listening &amp; Reading Official Certificate
+              </p>
+              <div class="cert-meta">
+                Skor: <strong>710</strong><br />
+                Penerbit: ETS<br />
+                Tahun: 2025
+              </div>
+            </div>
+            <div class="cert-card">
+              <p class="cert-name">
+                Skema Sertifikasi Okupasi Asisten Pemrograman Junior (Junior
+                Assistant Programmer)
+              </p>
+              <div class="cert-meta">
+                Bidang: Software Development (Pemrograman)<br />
+                Lembaga Sertifikasi Profesi: LSP SMK Negeri 3 Kendal<br />
+                Atas nama: Badan Nasional Sertifikasi Profesi (BNSP)<br />
+                Diterbitkan: Kendal, 17 Oktober 2025
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="sheet">
+        <div class="contact-list">
+          <a href="https://github.com/rainsta" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/rainsta/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a href="mailto:rainsta1658@gmail.com">rainsta1658@gmail.com</a>
+        </div>
+        <p class="footnote">Rainsta Asnamarch Pratama</p>
+      </footer>
+    </div>
+  </body>
+</html>
