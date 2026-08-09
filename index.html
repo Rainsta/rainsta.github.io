@@ -29,12 +29,39 @@
 
     <meta property="og:locale" content="id_ID" />
 
+    <meta
+      property="og:image"
+      content="https://rainsta.github.io/foto-profil.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://rainsta.github.io/foto-profil.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Foto Profil Rainsta Asnamarch Pratama"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rainsta Asnamarch Pratama | Biografi" />
+    <meta
+      name="twitter:description"
+      content="Biografi Rainsta Asnamarch Pratama, mahasiswa Teknologi Rekayasa Mekatronika di Politeknik Maritim Negeri Indonesia."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rainsta.github.io/foto-profil.jpg"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Rainsta Asnamarch Pratama",
         "url": "https://rainsta.github.io/",
+        "image": "https://rainsta.github.io/foto-profil.jpg",
         "description": "Rainsta Asnamarch Pratama merupakan mahasiswa Teknologi Rekayasa Mekatronika di Politeknik Maritim Negeri Indonesia. Ia memiliki latar belakang pendidikan di bidang Rekayasa Perangkat Lunak serta pengalaman dalam pengelolaan konten situs web, pemrograman, dan analisis perangkat lunak.",
         "email": "mailto:rainsta1658@gmail.com",
         "address": {
@@ -171,30 +198,28 @@
         flex-wrap: wrap;
       }
 
-      .photo-placeholder {
+      .photo-container {
         flex: 0 0 auto;
         width: 112px;
         height: 112px;
-        border: 1px dashed var(--line);
-        background: var(--bg);
+        border: 1px solid var(--line);
+        overflow: hidden;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        color: var(--ink-soft);
-        padding: 8px;
+        background: #d4111f;
       }
 
-      .photo-label {
-        font-size: 12px;
-        font-weight: 600;
+      .photo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
       }
 
+      .photo-label,
       .photo-status {
-        margin-top: 4px;
-        font-size: 10px;
-        color: var(--ink-soft);
+        display: none;
       }
 
       .header-text {
@@ -544,9 +569,15 @@
         <span class="corner br" aria-hidden="true"></span>
 
         <div class="header-grid">
-          <div class="photo-placeholder" aria-label="Tempat foto profil">
-            <!-- <span class="photo-label">Foto Profil</span> -->
-            <span class="photo-status">Foto belum tersedia</span>
+          <div
+            class="photo-container"
+            aria-label="Foto profil Rainsta Asnamarch Pratama"
+          >
+            <img
+              src="foto-profil.jpg"
+              alt="Foto Profil Rainsta Asnamarch Pratama"
+              class="photo-img"
+            />
           </div>
 
           <div class="header-text">
